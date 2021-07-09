@@ -51,7 +51,7 @@ func Handle(resp parser.RespData) error {
 				for _, cityDistrict := range cityItem.Districts {
 					//市数据保存
 					save(db, cityDistrict, provinceId)
-					continue
+					// continue
 
 					cityId, _ := strconv.Atoi(cityDistrict.AdCode)
 
